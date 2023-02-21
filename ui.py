@@ -21,11 +21,11 @@ class UI:
                                                 font=('arial', 20, 'italic'))
         self.canvas.grid(row=1, column=0, columnspan=2)
 
-        true_pic = PhotoImage(file='./images/true.png')
+        true_pic = PhotoImage(file='./true.png')
         self.true_b = Button(image=true_pic, highlightthickness=0, command=self.true_click)
         self.true_b.grid(row=2, column=0, padx=20, pady=20)
 
-        false_pic = PhotoImage(file='./images/false.png')
+        false_pic = PhotoImage(file='./false.png')
         self.false_b = Button(image=false_pic, highlightthickness=0, command=self.false_click)
         self.false_b.grid(row=2, column=1, padx=20, pady=20)
 
